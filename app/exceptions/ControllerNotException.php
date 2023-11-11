@@ -1,9 +1,9 @@
 <?php
 
-namespace app\classes\exceptions;
+namespace app\exceptions;
 
 use Exception;
 
-class ControllerNotException extends Exception
+class ControllerNotExistException extends \Exception
 {
 }
