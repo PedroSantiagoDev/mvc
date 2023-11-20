@@ -14,6 +14,8 @@ trait View
 
         $twig->loadExtensions();
 
+        $twig->loadFunctions();
+
         return $loadTwig;
     }
 
@@ -21,6 +23,6 @@ trait View
     {
         $template = $this->twig()->load(str_replace(".", "/", $view) . ".html");
 
-        return $template->desplay($data);
+        return $template->display($data);
     }
 }
