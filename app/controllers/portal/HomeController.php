@@ -8,6 +8,5 @@ class HomeController extends ContainerController
 {
     public function index()
     {
-        dd('index');
     }
 }
